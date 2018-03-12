@@ -50,7 +50,7 @@ public class DatabaseConnectTest extends HttpServlet {
                 Class.forName("com.mysql.jdbc.Driver");
                 if (connection == null) {
 //                connection=DriverManager.getConnection("jdbc:mysql://johnny.heliohost.org/supriyo_sensor_cloud?useSSL=false", "supriyo_63", "sb@9051568624");
-                    connection = DriverManager.getConnection("jdbc:mysql://localhost/sensor_cloud?useSSL=false", "root", "");
+                    connection = DriverManager.getConnection("jdbc:mysql://localhost/lllc", "user", "password");
 //                connection = DriverManager.getConnection("jdbc:mysql://mysql:3306/lllc", "user", "password");
 
                 }
