@@ -50,22 +50,22 @@ public class DatabaseConnectTest extends HttpServlet {
                 Class.forName("com.mysql.jdbc.Driver");
                 if (connection == null) {
 //                connection=DriverManager.getConnection("jdbc:mysql://johnny.heliohost.org/supriyo_sensor_cloud?useSSL=false", "supriyo_63", "sb@9051568624");
-                    connection = DriverManager.getConnection("jdbc:mysql://localhost/lllc", "user", "password");
-//                connection = DriverManager.getConnection("jdbc:mysql://mysql:3306/lllc", "user", "password");
+//                    connection = DriverManager.getConnection("jdbc:mysql://localhost/lllc", "user", "password");
+                connection = DriverManager.getConnection("jdbc:mysql://172.30.222.30:3306/sampledb", "user", "password");
 
                 }
                 statement = connection.createStatement();
 
-                String token = "fmKcH_xjjyw:APA91bFOt_jltd6JTyQfKzWKOjVuWtRtTU48XAizA9bJKg54dZOqR831SmZsOP0vBMVw3JtuAcZuXYYTOsurFiQMZO-YiDm6q5IxENEegmO19qYsZFVQZtVSATawT8i4zh-CkI-TSzhv";
-                String longitude = "2.24";
-                String latitude = "-1.154";
-                String status = "localfinal";
-                String user_name = "test5@abc.com";
-                String proximity = "1.09", light = "1.9";
-
-                int result = statement.executeUpdate("UPDATE users SET token='" + token + "' , longitude=" + longitude + " , latitude=" + latitude + " , status='" + status + "' , proximity = " + proximity + " , light = " + light + "  WHERE user_name='" + user_name + "';");
-                System.out.println("db.Main.main() : result " + result);
-                out.println("db.Main.main() : result " + result);
+//                String token = "fmKcH_xjjyw:APA91bFOt_jltd6JTyQfKzWKOjVuWtRtTU48XAizA9bJKg54dZOqR831SmZsOP0vBMVw3JtuAcZuXYYTOsurFiQMZO-YiDm6q5IxENEegmO19qYsZFVQZtVSATawT8i4zh-CkI-TSzhv";
+//                String longitude = "2.24";
+//                String latitude = "-1.154";
+//                String status = "localfinal";
+//                String user_name = "test5@abc.com";
+//                String proximity = "1.09", light = "1.9";
+//
+//                int result = statement.executeUpdate("UPDATE users SET token='" + token + "' , longitude=" + longitude + " , latitude=" + latitude + " , status='" + status + "' , proximity = " + proximity + " , light = " + light + "  WHERE user_name='" + user_name + "';");
+//                System.out.println("db.Main.main() : result " + result);
+                System.out.println("db.Main.main() : result ");
 
                 connection.close();
 
